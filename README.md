@@ -37,7 +37,7 @@ Displays how many times the god-mode routine has been triggered.
 Closes the process handle and terminates the program.
 
 
-## 🧠 Technical Overview
+## Technical Overview
 
 This project demonstrates:
 
