@@ -91,7 +91,7 @@ int main() {
 
     HANDLE prochandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processID);
     if (!prochandle) {
-        cout << "Nie mozna otworzyc programu, pozdrawiam Panie Kacprze<3" << endl;
+        cout << "Nie mozna otworzyc programu" << endl;
         return 1;
     }
     
@@ -102,7 +102,7 @@ int main() {
 
         if (opti == 1) {
             cout << "dodano amunicje do luku\n\n";
-            //ammo do łuku jak bym nie robił tego 200 raz do chuja
+            //ammo do łuku
             uintptr_t baseadd = basemod + 0x0284F620; 
             uintptr_t offset[] = { 0x4, 0xE8, 0x20, 0xF0, 0x30, 0x10 };     
             uintptr_t finaladd = baseadd;
@@ -282,4 +282,5 @@ int main() {
             cout << "god wykonany: " << god << endl;
         }
      }while(true);
+
 }
