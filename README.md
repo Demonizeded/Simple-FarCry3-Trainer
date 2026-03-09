@@ -21,17 +21,10 @@ Resolves a pointer chain and writes a new ammo value (999).
 Resolves a different pointer chain and writes 999 ammo.
 
 ### 3. Simple God Mode  
-Writes a fixed HP value (300.0f) through a pointer chain.  
-Includes a counter showing how many times the routine executed.
+Writes a fixed HP value (99.0f) through a pointer chain.  
 
-### 4. Money  
-Writes a large money value (99,999,999) to the resolved address.
-
-### 5–6. Additional Pointer Chains  
-Alternative pointer paths for ammo values, demonstrating pointer traversal logic.
-
-### 10. Debug  
-Displays how many times the god-mode routine has been triggered.
+### 4. God Mode Off
+Just a switch to turn godmode off.
 
 ### 0. Exit  
 Closes the process handle and terminates the program.
@@ -59,6 +52,8 @@ Iteratively reading pointers and applying offsets to reach dynamic in‑game val
 2. Run the trainer **as administrator**.  
 3. Select any option to observe how memory editing logic works.  
 4. Use `0` to exit safely.
+
+NOTICE: Godmode runs in a separate thread is active as long as this application is running. Once you close the trainer, the thread stops automatically and godmode will stop working.
 
 This project is **not intended for real gameplay modification**.
 
